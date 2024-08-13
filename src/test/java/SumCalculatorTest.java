@@ -37,4 +37,11 @@ class SumCalculatorTest {
     void sumTestMinusOne() {
         assertThrows(IllegalArgumentException.class, ()-> sumCalculator.sum(-1));
     }
+
+    @Test
+    void sumTestFour() {
+        int actualResult = sumCalculator.sum(4);
+        int expectedResult = 10;
+        assertEquals(expectedResult, actualResult);
+    }
 }
