@@ -32,4 +32,9 @@ class SumCalculatorTest {
     void sumTestZero() {
         assertThrows(IllegalArgumentException.class, ()-> sumCalculator.sum(0));
     }
+
+    @Test
+    void sumTestMinusOne() {
+        assertThrows(IllegalArgumentException.class, ()-> sumCalculator.sum(-1));
+    }
 }
